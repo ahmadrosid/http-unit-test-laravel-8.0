@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+
     public function index(Request $reques, CatService $catService)
     {
         if ($reques->has('action')) {
